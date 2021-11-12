@@ -20,7 +20,7 @@ def get_data_source(data_path):
 
 def correlation(dataSource):
     correlation_data = np.corrcoef(dataSource["x"], dataSource["y"])
-    print([0, 1])
+    print(correlation_data[0, 1])
 
 def setup():
     data_path="Days_Marks.csv"
