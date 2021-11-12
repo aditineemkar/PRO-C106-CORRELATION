@@ -2,7 +2,7 @@ import plotly_express as px
 import csv
 import numpy as np
 
-data = open("csv/Days_Marks.csv")
+data = open("Days_Marks.csv")
 df = csv.DictReader(data)
 p = px.scatter(df, x="Days Present", y="Marks In Percentage")
 p.show()
@@ -23,7 +23,7 @@ def correlation(dataSource):
     print(correlation_data[0, 1])
 
 def setup():
-    data_path="csv/Days_Marks.csv"
+    data_path="Days_Marks.csv"
     data_source = get_data_source(data_path)
     correlation(data_source)
 
